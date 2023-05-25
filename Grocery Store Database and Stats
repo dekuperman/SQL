@@ -1,0 +1,14 @@
+--Create a grocery store database
+
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT, colour TEXT, quantity INTEGER, brand TEXT); 
+
+INSERT INTO clothes VALUES (1, "T-Shirt", "Blue", 3, "Channel");
+INSERT INTO clothes VALUES (2, "Pants", "Red", 5, "Louis Vuitton");
+INSERT INTO clothes VALUES (3, "Skirt", "Black", 10, "Prada");
+INSERT INTO clothes VALUES (4, "Shoes", "White", 2, "Loubutin");
+
+--display only the items where there is less than 3 left, and order by brand
+SELECT * 
+FROM clothes 
+WHERE quantity > 3
+ORDER BY brand;
